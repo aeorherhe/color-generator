@@ -1,13 +1,13 @@
 # John Smilga Course - Coded by Abraham Orherhe
 
-![Design preview for the Random-user coding challenge](/product-preview.jpg)
+![Design preview for the color-generator coding challenge](./public/project-preview.jpg)
 
 ## Welcome! 👋
 
 ### Links
 
-- Solution URL: [solution]()
-- Live Site URL: [live site]()
+- Solution URL: [solution](https://github.com/aeorherhe/color-generator.git)
+- Live Site URL: [live site](https://aeorherhe-color-generator.netlify.app/)
 
 ### Built with
 
