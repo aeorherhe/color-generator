@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//   /* general variables */
+$shadow-1: 0 0 5px rgb(250, 234, 230);
+$shadow-2: 0px 0px 20px 2px rgba(150, 150, 150, 0.3);
+$transition: all 0.3s linear;
+$transition-2: all 0.5s ease-in-out;
+$line-1: 2px solid rgba(116, 108, 113, 0.5);
+$line-2: 2px solid rgba(28, 28, 192, 0.5);
+$line-3: 2px solid rgba(9, 224, 88, 0.5);
+
+// colors
+$White: hsl(0, 0%, 100%);
+$Dark: #303b5a;
+$Persian-blue: #2421ca00;
+$black: #0f172a;
+$bg-body: #f8fafc;
+
+// /******** variables for this project ********/
+$Light-red: hsl(0, 100%, 67%);
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Green-teal: #00bd91;
+$Cobalt-blue: hsl(234, 85%, 45%);
+
+// ## Gradients
+// background
+$Light-slate-blue: #7857ff;
+$Light-royal-blue: #2e2be9;
+// circle
+$Persian-blue: #27108acb;
+$Violet-blue: #4e21ca;
+
+// Neutral
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+
+body > div {
+  background-color: $bg-body;
+  font-family: "Inter", "Open Sans", Arial, Helvetica, sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: $White;
+  text-transform: capitalize;
+  // border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  background-color: $Light-slate-blue;
+  &.btn-grey {
+    background-color: #303b5a;
+  }
+  &.btn-green {
+    background-color: $Green-teal;
+  }
+  &.btn-red {
+    background-color: #ce6c4e;
+  }
+  &.btn-purple {
+    background-color: #7857ff;
+  }
+}
+
+.default-title {
+  text-transform: capitalize;
+}
+
+.title-underline {
+  background-color: $Dark;
+  border-radius: 1rem;
+  height: 0.25rem;
+  margin: 0.25rem auto;
+  width: 10rem;
+}
+
+// project
+.main {
+  margin: 2rem auto;
+  max-width: 80rem;
+  text-align: center;
+  width: 90vw;
+}
+
+.form-control {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  max-width: 50rem;
+
+  input[type="text"] {
+    border: none;
+    box-shadow: $shadow-1;
+    color: $Dark;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    outline: none;
+    padding: 0.75rem;
+    text-transform: capitalize;
+    &::placeholder {
+      color: $Dark;
+      letter-spacing: 0.1rem;
+      text-transform: capitalize;
+    }
+  }
+
+  .btn {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .color-input {
+    background: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: none;
+    height: 3.1rem;
+    outline: none;
+    width: 3.5rem;
+  }
+}
+
+.colors-ctn {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 0.25rem;
+}
+
+.color {
+  display: grid;
+  padding: 2rem;
+  place-items: center;
+}
+
+// my profile
+.my-profile {
+  align-self: self-end;
+  align-items: center;
+  background-color: $Persian-blue;
+  color: $White;
+  display: flex;
+  font-size: 1rem;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 0.75rem;
+  text-align: center;
+  width: 100%;
+}
+
+.my-profile > a {
+  cursor: pointer;
+  color: $Green-teal;
+  text-decoration: none;
+}
+
+.my-profile-icons a {
+  cursor: pointer;
+  color: $White;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 45rem) {
+  .my-profile {
+    font-size: 1rem;
+  }
+
+  .my-profile-icons a:first-of-type,
+  .my-profile-icons a:last-of-type {
+    display: none;
+  }
+}
