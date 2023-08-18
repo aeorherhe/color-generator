@@ -13,7 +13,7 @@ $shadow-1: 0 0 5px rgb(250, 234, 230);
 $shadow-2: 0px 0px 20px 2px rgba(150, 150, 150, 0.3);
 $transition: all 0.3s linear;
 $transition-2: all 0.5s ease-in-out;
-$line-1: 2px solid rgba(116, 108, 113, 0.5);
+$line-1: 1px solid rgba(162, 159, 161, 0.5);
 $line-2: 2px solid rgba(28, 28, 192, 0.5);
 $line-3: 2px solid rgba(9, 224, 88, 0.5);
 
@@ -52,14 +52,14 @@ body > div {
 
 .btn {
   cursor: pointer;
-  margin: 1rem 0;
-  padding: 0.75rem 1.5rem;
+  // margin: 1rem 0;
+  padding: 0.5rem 1rem;
   border: none;
   outline: none;
-  font-size: 1rem;
+  // font-size: 1rem;
   color: $White;
   text-transform: capitalize;
-  // border-radius: 0.5rem;
+  border-radius: 0.25rem;
   letter-spacing: 0.1rem;
   background-color: $Light-slate-blue;
   &.btn-grey {
@@ -107,10 +107,9 @@ body > div {
     border: none;
     box-shadow: $shadow-1;
     color: $Dark;
-    font-size: 1rem;
     letter-spacing: 0.1rem;
-    outline: none;
-    padding: 0.75rem;
+    outline: $line-1;
+    padding: 0.5rem;
     text-transform: capitalize;
     &::placeholder {
       color: $Dark;
@@ -122,14 +121,33 @@ body > div {
   .btn {
     border-radius: 0 0.5rem 0.5rem 0;
   }
+}
+
+.color-input {
+  width: 100%;
+  background: none;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: none;
+  height: 2.3rem;
+  outline: none;
+  width: 3.5rem;
+}
+
+@media screen and (min-width: 45rem) {
+  .form-control {
+    input[type="text"] {
+      font-size: 1rem;
+      padding: 0.75rem;
+    }
+  }
 
   .color-input {
-    background: none;
-    border-radius: 0.5rem 0 0 0.5rem;
-    border: none;
     height: 3.1rem;
-    outline: none;
-    width: 3.5rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
   }
 }
 
