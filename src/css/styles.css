@@ -70,7 +70,7 @@ body > div {
   box-shadow: 0 0 5px rgb(250, 234, 230);
   color: #303b5a;
   letter-spacing: 0.1rem;
-  outline: 1px solid rgba(162, 159, 161, 0.5);
+  outline: none;
   padding: 0.5rem;
   text-transform: capitalize;
 }

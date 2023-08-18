@@ -52,11 +52,9 @@ body > div {
 
 .btn {
   cursor: pointer;
-  // margin: 1rem 0;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
-  // font-size: 1rem;
   color: $White;
   text-transform: capitalize;
   border-radius: 0.25rem;
@@ -108,7 +106,7 @@ body > div {
     box-shadow: $shadow-1;
     color: $Dark;
     letter-spacing: 0.1rem;
-    outline: $line-1;
+    outline: none;
     padding: 0.5rem;
     text-transform: capitalize;
     &::placeholder {
