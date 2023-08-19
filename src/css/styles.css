@@ -62,7 +62,7 @@ body > div {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 1rem auto;
+  margin: 2.5rem auto;
   max-width: 50rem;
 }
 .form-control input[type=text] {
